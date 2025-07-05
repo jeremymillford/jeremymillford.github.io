@@ -1,1 +1,0 @@
-# jeremymillford.github.io

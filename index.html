@@ -1,115 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Jeremy Millford</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: 'Courier New', monospace;
-      background-color: #fff;
-      color: #111;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    section {
-      margin-top: 2.5rem;
-    }
-    .muted {
-      color: #666;
-    }
-    .project {
-      margin-top: 1.2rem;
-    }
-    .tag {
-      background: #eee;
-      padding: 0.2rem 0.5rem;
-      border-radius: 3px;
-      font-size: 0.85rem;
-    }
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeremy Millford – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="particles-js"></div>
   <div class="container">
-    <h1>Jeremy Millford</h1>
-    <p class="muted">Molecular Scientist & Software Engineer</p>
+    <header>
+      <h1>Jeremy Millford</h1>
+      <p>Molecular Scientist & Software Engineer</p>
+      <p>
+        <a href="mailto:Jeremy_millford@berkeley.edu">Jeremy_millford@berkeley.edu</a> ·
+        <a href="https://github.com/jeremymillford">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/jeremy-millford-032a15ab/">LinkedIn</a>
+      </p>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+      <a href="resume.pdf" download><button class="btn">Download Résumé</button></a>
+    </header>
 
     <section>
-      <p><strong>Email:</strong> <a href="mailto:Jeremy_millford@berkeley.edu">Jeremy_millford@berkeley.edu</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/jeremymillford">jeremymillford</a> &nbsp; | &nbsp;
-         <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeremy-millford-032a15ab/">jeremy-millford</a></p>
-    </section>
-
-    <section>
-      <h2>About</h2>
-      <p>I’m a scientist, engineer, and machine learning researcher with experience in computational chemistry, drug discovery, and data science. I build systems that blend biology and software — from quantum chemistry engines to neural networks for atom typing.</p>
+      <h2>About Me</h2>
+      <p>I’m a computational scientist working at the interface of quantum chemistry, data science, and machine learning. From GNN-based atom typing to CNDO molecular modeling, I aim to accelerate drug discovery and modeling through code.</p>
     </section>
 
     <section>
       <h2>Projects</h2>
-      <div class="project">
-        <strong>⚛ Atom Typing with GNNs</strong><br>
-        <span class="tag">GNN · PyTorch Geometric</span><br>
-        High-performing MPNN to predict atom types for docking and bonding simulation.
-      </div>
-
-      <div class="project">
-        <strong>🧬 Parallel Genome Alignment</strong><br>
-        <span class="tag">MPI · CUDA · NERSC</span><br>
-        Supercomputer implementation for aligning entire genomes with distributed parallelism.
-      </div>
-
-      <div class="project">
-        <strong>🧠 Alzheimer’s Gene Network Analysis</strong><br>
-        <span class="tag">Bioinformatics · Python · NLP</span><br>
-        Analysis of Alzheimer’s gene expression, protein networks, and clinical correlates.
-      </div>
-
-      <div class="project">
-        <strong>🧪 CNDO Quantum Chemistry Engine</strong><br>
-        <span class="tag">C++ · Quantum Chemistry</span><br>
-        Built CNDO/2 and CNDO/S engines for molecular energy and gradient calculations.
-      </div>
+      <details open>
+        <summary>⚛ Atom Typing with GNNs</summary>
+        <p>Developed MPNN models to predict atom types in drug-like molecules using PyTorch Geometric.</p>
+      </details>
+      <details>
+        <summary>🧬 Parallel Genome Alignment</summary>
+        <p>Used MPI and CUDA to parallelize alignment algorithms for full genome comparison at NERSC.</p>
+      </details>
+      <details>
+        <summary>🧠 Alzheimer's Gene Network</summary>
+        <p>Analyzed Alzheimer's gene expression and protein networks using Python and clinical data.</p>
+      </details>
+      <details>
+        <summary>🔬 CNDO Quantum Engine</summary>
+        <p>Built CNDO/2 and CNDO/S molecular simulators from scratch in C++ with support for gradient output.</p>
+      </details>
     </section>
 
     <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>UC Berkeley</strong> — MS in Molecular Science and Software Engineering (3.93 GPA)</li>
-        <li><strong>UT Health</strong> — Biomedical Informatics coursework (3.5 GPA)</li>
-        <li><strong>Texas State University</strong> — BS in Biology, Minor in Chemistry (3.21 GPA)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Résumé</h2>
-      <p><a href="resume.pdf" target="_blank">Download PDF</a></p>
-      <!-- Optional: link your actual resume file here -->
+      <h2>Skills</h2>
+      <div class="skill"><span>C++</span><div class="bar" style="width: 90%;"></div></div>
+      <div class="skill"><span>Python</span><div class="bar" style="width: 95%;"></div></div>
+      <div class="skill"><span>CUDA</span><div class="bar" style="width: 80%;"></div></div>
+      <div class="skill"><span>PyTorch</span><div class="bar" style="width: 85%;"></div></div>
+      <div class="skill"><span>Quantum Chemistry</span><div class="bar" style="width: 90%;"></div></div>
     </section>
   </div>
+
+  <script src="particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js config loaded');
+    });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
