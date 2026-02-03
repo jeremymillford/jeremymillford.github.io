@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: #1E90FF; /*bright blue*/
+    color: #0066CC; /*modern dark blue*/
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #1E90FF; /*bright blue*/
+    color: #0066CC; /*modern dark blue*/
 
 }
 
@@ -48,7 +48,7 @@ button {
 
 /* Header Styles */
 .site-header {
-    background-color: #1E90FF; /*bright blue*/
+    background-color: #0066CC; /*modern dark blue*/
     padding: 1rem 0;
     position: fixed; /* Fixes the header to the top */
     width: 100%; /* Full width */
@@ -97,7 +97,7 @@ button {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(180deg, #1E90FF /*bright blue*/, #0d47a1, #000000 /*black*/); 
+    background: linear-gradient(180deg, #0066CC /*modern dark blue*/, #003d82, #000000 /*black*/); 
     padding: 0 2rem;
     color: white;
 }
@@ -202,7 +202,7 @@ button {
 }
 
 .skill-button:hover {
-    background-color: #1E90FF /*bright blue*/
+    background-color: #0066CC /*modern dark blue*/
 }
 
 /* About Section */
@@ -271,7 +271,7 @@ button {
 }
 
 .education-item h3 {
-    color: #1E90FF /*bright blue*/
+    color: #0066CC /*modern dark blue*/
 }
 
 .course-container {
@@ -301,7 +301,7 @@ button {
 
 .course-box {
     flex: 1 1 200px; /* Allow two boxes per row with gap */
-    background-color: #1E90FF; /*bright blue*/
+    background-color: #0066CC; /*modern dark blue*/
     color: #F4FDFF; /*cool white.*/ 
     padding: 1.5rem; 
     border-radius: 10px; 
@@ -385,7 +385,7 @@ button {
 
 /* Header Styling */
 .coding-projects-section h3 {
-    background-color: #1E90FF; /*bright blue*/
+    background-color: #0066CC; /*modern dark blue*/
     color:  #FCA311; /*yellow*/
     padding: 0.5rem; /* Padding around the header */
     border-radius: 8px 8px 8px 8px; /* Round corners */
