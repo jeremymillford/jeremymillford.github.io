@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: #A288E3; /*lavender*/
+    color: #1E90FF; /*bright blue*/
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #A288E3; /*lavender*/
+    color: #1E90FF; /*bright blue*/
 
 }
 
@@ -48,7 +48,7 @@ button {
 
 /* Header Styles */
 .site-header {
-    background-color: #A288E3; /*lavender*/
+    background-color: #1E90FF; /*bright blue*/
     padding: 1rem 0;
     position: fixed; /* Fixes the header to the top */
     width: 100%; /* Full width */
@@ -71,7 +71,7 @@ button {
 }
 
 .nav-links a {
-    color: #38023B; /*plum*/
+    color: #FCA311; /*yellow*/
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -82,7 +82,7 @@ button {
 
 /* Logo Color */
 .logo a {
-    color: #38023B; /*plum*/
+    color: #FCA311; /*yellow*/
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -97,7 +97,7 @@ button {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(180deg, #A288E3 /*lavender*/, #38023B, #000000 /*black*/); 
+    background: linear-gradient(180deg, #1E90FF /*bright blue*/, #0d47a1, #000000 /*black*/); 
     padding: 0 2rem;
     color: white;
 }
@@ -202,7 +202,7 @@ button {
 }
 
 .skill-button:hover {
-    background-color: #A288E3 /*lavender*/
+    background-color: #1E90FF /*bright blue*/
 }
 
 /* About Section */
@@ -271,7 +271,7 @@ button {
 }
 
 .education-item h3 {
-    color: #A288E3 /*lavender*/
+    color: #1E90FF /*bright blue*/
 }
 
 .course-container {
@@ -301,7 +301,7 @@ button {
 
 .course-box {
     flex: 1 1 200px; /* Allow two boxes per row with gap */
-    background-color: #A288E3; /*lavender*/
+    background-color: #1E90FF; /*bright blue*/
     color: #F4FDFF; /*cool white.*/ 
     padding: 1.5rem; 
     border-radius: 10px; 
@@ -342,7 +342,7 @@ button {
 
 .experience-item:hover {
     transform: translateY(-5px) scale(1.02); /* Lift effect and slight scale on hover */
-    background-color: #38023B; /*plum*/  /* Change background color on hover */
+    background-color: #0d47a1; /*dark blue*/  /* Change background color on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for more depth */
 }
 
@@ -385,15 +385,15 @@ button {
 
 /* Header Styling */
 .coding-projects-section h3 {
-    background-color: #A288E3; /*lavender*/
-    color:  #38023B; /*plum*/
+    background-color: #1E90FF; /*bright blue*/
+    color:  #FCA311; /*yellow*/
     padding: 0.5rem; /* Padding around the header */
     border-radius: 8px 8px 8px 8px; /* Round corners */
     margin: 0; /* Remove margin to keep it flush with the top */
 }
 
 .coding-projects-section a {
-    color: #38023B; /*plum*/
+    color: #FCA311; /*yellow*/
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -412,7 +412,7 @@ button {
 
 /* Footer */
 footer {
-    background-color: #38023B; /*plum*/
+    background-color: #0d47a1; /*dark blue*/
     color: #F4FDFF; /*cool white.*/ 
     padding: 2rem;
     text-align: center;
@@ -422,12 +422,13 @@ footer {
     display: flex; /* Flexbox for alignment */
     justify-content: center; /* Center the icons */
     margin-top: 1rem; /* Add space above the icons */
+    gap: 3rem; /* Add larger gap between footer icons */
 }
 
 .icon {
     font-size: 2rem; /* Icon size */
     color: #FCA311; /* Icon color */
-    margin: 0 1rem; /* Space between icons */
+    margin: 0; /* Remove margin, use gap instead */
     transition: color 0.3s; /* Smooth color transition */
 }
 
