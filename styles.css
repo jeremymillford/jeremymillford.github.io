@@ -147,12 +147,13 @@ button {
     display: flex; /* Flexbox for alignment */
     justify-content: left; /* Center the icons */
     margin-top: 1rem; /* Add space above the icons */
+    gap: 2rem; /* Add spacing between hero icons */
 }
 
 .icon {
     font-size: 2rem; /* Icon size */
     color: #FCA311; /* Icon color */
-    margin: 0 1rem; /* Space between icons */
+    margin: 0; /* Remove margin, use gap instead */
     transition: color 0.3s; /* Smooth color transition */
 }
 
