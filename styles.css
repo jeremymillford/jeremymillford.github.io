@@ -426,8 +426,8 @@ footer {
     gap: 3rem; /* Add larger gap between footer icons */
 }
 
-.icon {
-    font-size: 2rem; /* Icon size */
+.site-footer .icon {
+    font-size: 3rem; /* Make footer icons larger */
     color: #FCA311; /* Icon color */
     margin: 0; /* Remove margin, use gap instead */
     transition: color 0.3s; /* Smooth color transition */
