@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Typing animation
-    const typingText = "I'm a chemist who loves coding.";
+    const typingText = "I love science and using technology to understand it!";
     const element = document.getElementById("typing-text");
     element.classList.add("typing-effect"); // Add typing effect class
     
